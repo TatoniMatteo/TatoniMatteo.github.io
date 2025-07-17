@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Portfolio di Matteo - Material Design</title>
+
+    <!-- Roboto Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <!-- Font Awesome CDN -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="md-header">
+    <h1>Matteo Portfolio</h1>
+    <nav>
+        <ul class="md-nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="md-section">
+        <h2>Chi sono</h2>
+        <p>Sono Matteo, sviluppatore front-end e mobile app appassionato di Material Design.</p>
+        <i class="fas fa-user-circle md-icon"></i>
+    </section>
+
+    <section id="skills" class="md-section">
+        <h2>Skills</h2>
+        <div class="md-skills-list">
+            <span class="md-skill">JavaScript</span>
+            <span class="md-skill">React</span>
+            <span class="md-skill">Flutter</span>
+            <span class="md-skill">Java</span>
+            <span class="md-skill">Spring Boot</span>
+        </div>
+    </section>
+
+    <section id="projects" class="md-section">
+        <h2>Projects</h2>
+        <div class="md-projects-grid">
+            <article class="md-project-card">
+                <img src="assets/img/placeholder.png" alt="Project 1"/>
+                <h3>Project 1</h3>
+                <p>Descrizione breve del progetto 1.</p>
+                <a href="#" class="md-button">Vedi Demo</a>
+            </article>
+            <!-- altri progetti... -->
+        </div>
+    </section>
+
+    <section id="contact" class="md-section">
+        <h2>Contact</h2>
+        <form class="md-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required/>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required/>
+
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="md-button">Invia</button>
+        </form>
+    </section>
+</main>
+
+<footer class="md-footer">
+    <p>&copy; 2025 Matteo - Tutti i diritti riservati</p>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
