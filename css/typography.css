@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&family=Fredoka:wght@400;600&family=Fira+Mono&display=swap');
+
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --pacifico: 'Pacifico', cursive;
+    --fredoka: 'Fredoka', sans-serif;
+    --monospace: 'Fira Mono', monospace;
+}
+
+body {
+    font-family: var(--roboto), sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== FONTS ===== */
+.roboto {
+    font-family: var(--roboto), sans-serif !important;
+}
+
+.pacifico {
+    font-family: var(--pacifico), sans-serif !important;
+}
+
+.fredoka {
+    font-family: var(--fredoka), sans-serif !important;
+}
+
+.monospace {
+    font-family: var(--monospace), sans-serif !important;
+}
+
+/* ===== TEXT COLORS ===== */
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-accent {
+    color: var(--accent) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.text-muted {
+    color: var(--muted) !important;
+}
+
+.text-highlight {
+    color: var(--highlight) !important;
+}
+
+/* ===== TEXT EFFECTS ===== */
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.lowercase {
+    text-transform: lowercase !important;
+}
+
+.capitalize {
+    text-transform: capitalize !important;
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+.strikethrough {
+    text-decoration: line-through !important;
+}
+
+.italic {
+    font-style: italic !important;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+.light {
+    font-weight: 300 !important;
+}
+
+.shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.wide {
+    letter-spacing: 0.1em;
+}
+
+.tight {
+    letter-spacing: -0.05em;
+}
+
+/* ===== ALIGNMENT ===== */
+.center {
+    text-align: center !important;
+}
+
+.right {
+    text-align: right !important;
+}
+
+.left {
+    text-align: left !important;
+}
+
+/* ===== TEXT SIZE ===== */
+.text-xs {
+    font-size: 0.75rem !important; /* 12px */
+}
+
+.text-sm {
+    font-size: 0.875rem !important; /* 14px */
+}
+
+.text-md {
+    font-size: 1rem !important; /* 16px (default) */
+}
+
+.text-lg {
+    font-size: 1.5rem !important; /* 20px */
+}
+
+.text-xl {
+    font-size: 2rem !important; /* 24px */
+}
+
+.text-xxl {
+    font-size: 3rem !important; /* 32px */
+}
+
+.text-huge {
+    font-size: 4rem !important; /* 48px */
+}
+
+/* TEXT TRUNCATE */
+.text-truncate {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+
+/* LINE HEIGHT */
+.line-height-xxs {
+    line-height: 0 !important;
+}
+
+.line-height-sm {
+    line-height: 1.2 !important;
+}
+
+.line-height-md {
+    line-height: 1.5 !important;
+}
+
+.line-height-lg {
+    line-height: 2 !important;
+}
+
+/* ===== DEFAULT TYPOGRAPHY FOR TAGS ===== */
+
+h1 {
+    font-size: 4rem; /* ~48px */
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 0.5em;
+}
+
+h2 {
+    font-size: 3rem; /* ~36px */
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 0.5em;
+}
+
+h3 {
+    font-size: 2rem; /* ~28px */
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 0.5em;
+}
+
+h4 {
+    font-size: 1.5rem; /* ~24px */
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 0.5em;
+}
+
+h5 {
+    font-size: 1.25rem; /* ~20px */
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 0.5em;
+}
+
+h6 {
+    font-size: 1rem; /* ~16px */
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 0.5em;
+}
+
+p {
+    font-size: 1rem; /* ~16px */
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 0 1em;
+}
+
+small {
+    font-size: 0.875rem; /* ~14px */
+    color: var(--muted);
+}
+
+blockquote {
+    margin: 0 0 1em;
+    padding-left: 1em;
+    border-left: 4px solid var(--accent);
+    font-style: italic;
+    color: var(--muted);
+}
+
+/* =========================
+   RESPONSIVE — MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    /* Testi generali */
+    .text-xs {
+        font-size: 0.7rem !important;
+    }
+
+    .text-sm {
+        font-size: 0.75rem !important;
+    }
+
+    .text-md {
+        font-size: 0.85rem !important;
+    }
+
+    .text-lg {
+        font-size: 1rem !important;
+    }
+
+    .text-xl {
+        font-size: 1.25rem !important;
+    }
+
+    .text-xxl {
+        font-size: 1.75rem !important;
+    }
+
+    .text-huge {
+        font-size: 2rem !important;
+    }
+
+    /* Heading */
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    h6 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+    }
+
+    small {
+        font-size: 0.75rem;
+    }
+
+    /* Line height su mobile */
+    .line-height-xxs {
+        line-height: 1 !important;
+    }
+
+    .line-height-sm {
+        line-height: 1.2 !important;
+    }
+
+    .line-height-md {
+        line-height: 1.4 !important;
+    }
+
+    .line-height-lg {
+        line-height: 1.6 !important;
+    }
+
+}

@@ -3,84 +3,67 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Portfolio di Matteo - Material Design</title>
+    <title>Portfolio</title>
 
-    <!-- Roboto Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
-
-    <!-- Font Awesome CDN -->
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/typography.css"/>
+    <link rel="stylesheet" href="css/utility.css"/>
+    <link rel="stylesheet" href="css/animations.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
 </head>
+
 <body>
-<header class="md-header">
-    <h1>Matteo Portfolio</h1>
-    <nav>
-        <ul class="md-nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+
+<header class="d-flex flex-column justify-center align-items-center w-100vw h-100vh z-10 position-relative">
+    <div id="particles" class="w-100 h-100 z-0 position-absolute top-0 left-0"></div>
+    <h1 id="name" class="monospace bold text-huge uppercase center m-0" data-typewriter="100">Matteo Tatoni</h1>
+    <h2 id="job" class="monospace text-xl center" data-typewriter="80">Junior Software Developer</h2>
+    <div class="contact-buttons z-20">
+        <a href="https://linkedin.com/in/matteo-tatoni" target="_blank" class="btn-social">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/TatoniMatteo" target="_blank" class="btn-social">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://stackoverflow.com/users/13746083/matteo-tatoni" target="_blank" class="btn-social">
+            <i class="fab fa-stack-overflow"></i> Stack Overflow
+        </a>
+        <a href="mailto:tatonimatteo@gmail.com" class="btn-social">
+            <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="https://t.me/MatteoTat" target="_blank" class="btn-social">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+        <a href="https://wa.me/3318985076" target="_blank" class="btn-social">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://paypal.me/MatteoTatoni" target="_blank" class="btn-social">
+            <i class="fab fa-paypal"></i> PayPal
+        </a>
+        <a href="https://www.facebook.com/matteo.tatoni.01/" target="_blank" class="btn-social">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://instagram.com/matteo_tatoni" target="_blank" class="btn-social">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+
 </header>
 
+
 <main>
-    <section id="about" class="md-section">
-        <h2>Chi sono</h2>
-        <p>Sono Matteo, sviluppatore front-end e mobile app appassionato di Material Design.</p>
-        <i class="fas fa-user-circle md-icon"></i>
-    </section>
 
-    <section id="skills" class="md-section">
-        <h2>Skills</h2>
-        <div class="md-skills-list">
-            <span class="md-skill">JavaScript</span>
-            <span class="md-skill">React</span>
-            <span class="md-skill">Flutter</span>
-            <span class="md-skill">Java</span>
-            <span class="md-skill">Spring Boot</span>
-        </div>
-    </section>
-
-    <section id="projects" class="md-section">
-        <h2>Projects</h2>
-        <div class="md-projects-grid">
-            <article class="md-project-card">
-                <img src="assets/img/placeholder.png" alt="Project 1"/>
-                <h3>Project 1</h3>
-                <p>Descrizione breve del progetto 1.</p>
-                <a href="#" class="md-button">Vedi Demo</a>
-            </article>
-            <!-- altri progetti... -->
-        </div>
-    </section>
-
-    <section id="contact" class="md-section">
-        <h2>Contact</h2>
-        <form class="md-form">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required/>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required/>
-
-            <label for="message">Messaggio</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit" class="md-button">Invia</button>
-        </form>
-    </section>
 </main>
 
-<footer class="md-footer">
-    <p>&copy; 2025 Matteo - Tutti i diritti riservati</p>
+<footer>
+
 </footer>
 
+<script src="js/particles-configuration.js"></script>
+<script src="js/typewriter.js"></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

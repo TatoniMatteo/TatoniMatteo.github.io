@@ -1,0 +1,78 @@
+/* colors.css */
+
+:root {
+    /* Blu - scala */
+    --blue-50: #e6ebf5;
+    --blue-100: #c0cee6;
+    --blue-200: #99afe0;
+    --blue-300: #738fd9;
+    --blue-400: #4a6fa5; /* accent */
+    --blue-500: #345681; /* primary */
+    --blue-600: #2a446b;
+    --blue-700: #22365b;
+    --blue-800: #1b2a4a; /* blue-dark */
+    --blue-900: #162c4a;
+
+    /* Beige - scala */
+    --beige-50: #faf7f2;
+    --beige-100: #f5f0e6; /* base */
+    --beige-200: #eae1d1;
+    --beige-300: #e0d6c6; /* beige-dark */
+    --beige-400: #d4cdbf;
+    --beige-500: #c9c1b3;
+    --beige-600: #bcb5a3;
+
+    /* Grigi neutri */
+    --gray-50: #f9f9f9;
+    --gray-100: #eeeeee;
+    --gray-200: #cccccc;
+    --gray-300: #aaaaaa;
+    --gray-400: #888888; /* muted */
+    --gray-500: #666666;
+    --gray-600: #444444;
+    --gray-700: #222222;
+    --gray-800: #111111;
+
+    /* Testo e sfondo base */
+    --text: var(--blue-900);
+    --background: var(--beige-50);
+
+    /* Accenti e dettagli */
+    --accent: var(--blue-400);
+    --primary: var(--blue-500);
+    --secondary: var(--beige-300);
+    --highlight: var(--beige-100);
+    --muted: var(--gray-400);
+    --error: red;
+    --success: green;
+
+    /* Ombre */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+    --shadow-heavy: rgba(0, 0, 0, 0.4);
+
+    /* Bordi e linee */
+    --border-light: var(--gray-100);
+    --border-strong: var(--gray-300);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: var(--beige-50);
+        --background: var(--blue-900);
+
+        --accent: var(--beige-200);
+        --primary: var(--beige-300);
+        --secondary: var(--blue-800);
+        --highlight: var(--blue-700);
+        --muted: var(--gray-500);
+
+        --shadow-light: rgba(0, 0, 0, 0.6);
+        --shadow-medium: rgba(0, 0, 0, 0.8);
+        --shadow-heavy: rgba(0, 0, 0, 1);
+
+        --border-light: var(--blue-800);
+        --border-strong: var(--blue-700);
+    }
+}
